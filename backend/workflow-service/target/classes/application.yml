@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: workflow-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/systemforge
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+cors:
+  allowed-origins: "http://localhost:3000"
